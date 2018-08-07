@@ -66,9 +66,10 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #e84545;
+	color: rgb(0, 166, 255);
 }
 a:hover, a:focus {
+	color:#00b4c3;
 	text-decoration: none;
 	-moz-transition: background-color, color, 0.3s;
 	-o-transition: background-color, color, 0.3s;
@@ -121,12 +122,12 @@ ul li {
 	float: left;
 }
 #header.fixed {
-	background-color: rgba(137, 149, 152, .5);
-	/*background-color: rgba(255, 255, 255, 1);*/
+	/*background-color: rgba(137, 149, 152, .9);*/
+	background-color: rgba(255, 255, 255, .75);
 }
 #header.fixed .header-content {
 	border-bottom: 0;
-	padding: 25px 10%;
+	padding: 10px 10%;
 }
 #header.fixed .nav-toggle {
 	top: 18px;
@@ -369,6 +370,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .service {
 	margin-bottom: 3%;
+	background-color: #e8e8e8;
 }
 .service h4 {
 	font-size: 19px;

@@ -10,6 +10,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>7netic - FREE Templates / Creative Portfolio</title>
+<meta name=author content="逗點人 7netic Illustration">
+<meta name=description content="FREE Templates、套版、平面設計 Graphic Design、網頁設計 Web & UI Design
+、3D設計、插畫設計 Illustration Design項目與說明 合作邀約">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -17,6 +20,14 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<!--Font -->
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="7netic.png" type="image/png">
+<link rel="shortcut icon" href="7netic.ico" type="img/x-icon">
+<script src="contactform/contactform.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -172,9 +183,9 @@
       </div>
 
       <div class="col-md-7 col-sm-6">
-          <div class="col-md-4 col-sm-6 service text-center">
+          <div class="col-md-12 col-sm-12 service text-center">
             <div class="service-content">
-              <img src="images/7netic_pic1.png">
+              <img src="images/7netic_pic1.png" style="width: 100%;height: auto">
               <h5></h5>
             </div>
           </div>
@@ -182,12 +193,97 @@
       </div>
       
 </section>
+
+
+
+
+<section class="contact" id="contact" style="margin: 0;padding: 0">
+  <div class="row">
+    <div class="col-lg-6 col-sm-7 contact-bg contact-img" style="background-image: url('images/pic2.png');background-repeat: no-repeat;background-position: bottom right;">
+          <div class="contact-info-box">
+          </br>
+              <h4><i class="fa-pencil"></i> 合作邀約:</br></br>
+              <a href="mailto:7netic@gmail.com">7netic@gmail.com</a></h4>
+              </br></br></br>
+          </div>
+
+        <div class="contact-info-box">
+            <h3><i class="icon-map-marker"></i> Contact</h3>
+
+              <ul class="social-link" style="margin: 0;">
+                  <li class="facebook"><a href="http://www.facebook.com/7netic" target=" blank"><i class="fa-facebook"></i></a></li>
+                  <li class="behance"><a href="http://www.behance.net/7netic" target=" blank"><i class="fa-behance"></i></a></li>
+                  <li class="instagram"><a href="http://www.instagram.com/7netic" target=" blank"><i class="fa-instagram"></i></a></li>
+                  <li class="blog"><a href="https://blog.7netic.com/" target=" blank"><i class="fa-rss"></i></a></li>
+              </ul>
+          </div></br>
+        </div>
+
+<!-- 粉絲專頁外掛程式 https://developers.facebook.com/docs/plugins/page-plugin  -->
+<div class="row col-lg-5 col-sm-5" style="text-align: center;">
+<div id="fb-root" style=""></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--<div class="fb-page" data-href="https://www.facebook.com/7netic/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/7netic/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/7netic/">逗點人 7netic Illustration 設計插畫誌</a></blockquote></div>-->
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F7netic%2F&tabs=timeline&width=320&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+</div>
+      
+
+<!--form START-->        
+      <!--<div class="col-lg-6 col-sm-12 wow fadeInUp" style="margin-top: 0%;"></div>-->
+        <div class="form">
+            <div class="col-lg-6 col-sm-12 wow fadeInUp" style="margin-top: 0%;">
+              <div id="errormessage"></div>
+              </br>
+              <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                      <input type="text" name="name" class="form-control input-text" id="name" placeholder="姓名 Name" data-rule="minlen:1" data-msg="請最少輸入一個字 Please enter at least 1 chars" />
+                      <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control input-text" name="email" id="email" placeholder="Email" data-rule="email" data-msg="請輸入正確的mail！ Please enter a valid email" />
+                      <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="主題 Subject" data-rule="minlen:1" data-msg="請最少輸入1個字 Please enter at least 1 chars of subject" />
+                      <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control input-text text-area" name="message" rows="3" data-rule="required" data-msg="沒寫內容我得通靈啦！ Please write something for 7netic" placeholder="合作邀約 / 意見回饋"></textarea>
+                      <div class="validation"></div>
+                 
+                  </div>
+
+                </div>
+
+                <div class="col-lg-6 col-sm-12 pull-right" style="margin-top: 15%;"></div>
+                  <div class="text-center"><button type="submit" class="input-btn">送出 Send！</button></div>
+                </div>
+              </form>
+          </div><br>
+           <div id="sendmessage">逗點人 / 7netic Illustration已收到您的回饋，Thank you!</div>  
+      </div><!--form End-->
+  </div>
+</section>
+
+
+
+<div class="clearfix"></div>
+
 <!-- service section --> 
 <!-- footer section -->
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
       <h4>Hello, I'm Eden.</h4>
+      <h4><i class="fa-pencil"> </i><a href="https://7netic.com/design_quotation.html" target="_blank"> 設計報價表</a></h4>
       <p> 合作邀約 Please email to: <a href="mailto:7netic@gmail.com"> 7netic@gmail.com </a></p>
     </div>
   </br></br>
