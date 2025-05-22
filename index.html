@@ -38,6 +38,12 @@
 
   gtag('config', 'UA-123488122-1');
 </script>
+  <script>
+function setCurrentYear() {
+    let year = new Date().getFullYear();
+    document.getElementById('currentYear').innerHTML = year;
+}
+</script>
 </head>
 <body>
 <!-- header top section -->
@@ -310,7 +316,8 @@ fjs.parentNode.insertBefore(js, fjs);
     </div>
   </br></br>
     <div class="col-md-3 pull-right">
-      <span style="font-size: 18px">© <a href="https://www.designsnow.app/">7netic.com</a>, 2018<br>
+      <span style="font-size: 18px">© <a href="https://blog.7netic.com/">7netic.com</a>, <span id="currentYear"></span>
+              <script>setCurrentYear()</script><br>
       </span>
     </div>
   </div>
